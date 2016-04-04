@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+h1, h2, h3 {
+    padding-top: 20px;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: HelveticaNeueCyr;
+}
+
+/*table for login form*/
+#login-form {
+    margin-top: 70px;
+}
+
+table {
+    border: solid #dcdcdc 1px;
+    padding: 25px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+table tr, td {
+    padding: 15px;
+/ / border: solid #e1e1e1 1 px;
+}
+
+table tr td input, select {
+    width: 97%;
+    height: 45px;
+    border: solid #e1e1e1 1px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition-duration: 0.5s;
+    box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+table tr td button {
+    width: 100%;
+    height: 60px;
+    border: 0px;
+    background: #0c2d4e;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(1, 0, 0, 0.2);
+    color: #f9f9f9;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+table tr td button:active {
+    position: relative;
+    top: 1px;
+}
+
+table tr td a {
+    text-decoration: none;
+    color: #00a2d1;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+}
+
+/*end of table for login form*/
+
+/*default table*/
+table.deftable {
+    border-collapse: collapse;
+    width: 80%;
+    align: center;
+    margin: auto;
+    margin-top: 50px;
+    border: 0px;
+
+}
+
+table.deftable th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+table.deftable tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+table.deftable th {
+    background-color: #333333;
+    color: white;
+}
+
+/* css for home page  */
+/*display on full page*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    background: #000b16;
+    color: #9fa8b0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#header #left {
+    float: left;
+    position: relative;
+}
+
+#header #left label {
+    position: relative;
+    top: 5px;
+    left: 100px;
+    font-size: 35px;
+}
+
+#header #right {
+    float: right;
+    position: relative;
+}
+
+#header #right #content {
+    position: relative;
+    top: 20px;
+    right: 100px;
+    color: #fff;
+}
+
+#header #right #content a {
+    color: #00a2d1;
+}
+
+#cssmenu {
+    background: #0c2d4e;
+    width: auto;
+}
+
+#cssmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+}
+
+#cssmenu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#cssmenu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#cssmenu.align-right ul li {
+    float: right;
+}
+
+#cssmenu.align-center ul {
+    text-align: center;
+}
+
+#cssmenu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+#cssmenu ul li a:hover {
+    background-color: #000b16;
+}
+
+#cssmenu ul li a:hover:before {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #cssmenu ul li {
+        float: none;
+        display: block;
+    }
+
+    #cssmenu ul li a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid #fb998c;
+    }
+
+    #cssmenu ul li.last > a,
+    #cssmenu ul li:last-child > a {
+        border: 0;
+    }
+
+    #cssmenu ul li a:after {
+        display: none;
+    }
+
+    #cssmenu ul li a:before {
+        display: none;
+    }
+}
+
+.button {
+    background-color: #0c2d4e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+}
+
+.button:hover {
+    background-color: #333333;
+}
+
+.btnwrap {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
